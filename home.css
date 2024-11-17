@@ -1,0 +1,81 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.main-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.property-img {
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    transition: filter 0.3s;
+}
+
+.property-container {
+    margin: 10px;
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.property-image {
+    width: 100%;
+    height: 300px;
+    cursor: pointer;
+    filter: blur(5px);
+    transition: filter 0.3s;
+}
+
+.property-image:hover {
+    filter: blur(1px);
+}
+
+.property-details {
+    padding: 20px;
+}
+
+.property-title {
+    color: #333;
+}
+
+.property-description {
+    font-size: 16px;
+    color: #666;
+}
+
+.footer { 
+    position: absolute; 
+    bottom: 0; 
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+    .property-image {
+        width: 100%;
+        height: 40%;
+        cursor: pointer;
+        filter: blur(0px);
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+}
