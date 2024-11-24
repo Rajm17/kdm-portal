@@ -101,6 +101,7 @@
 }
 
 
+
 *,
 *::before,
 *::after {
@@ -323,6 +324,7 @@ body.nav-active { overflow: hidden; }
   background-color: var(--gold-crayola);
   transition: var(--transition-2);
   z-index: -1;
+  
 }
 
 .btn .text { transition: var(--transition-1); }
@@ -348,6 +350,7 @@ body.nav-active { overflow: hidden; }
 .btn-secondary {
   background-color: var(--gold-crayola);
   color: var(--black);
+  
 }
 
 .btn-secondary::before { background-color: var(--smoky-black-1); }
@@ -617,11 +620,13 @@ body.nav-active { overflow: hidden; }
   visibility: hidden;
   z-index: 2;
   transition: var(--transition-2);
+  
 }
 
 .navbar.active {
   visibility: visible;
   transform: translateX(360px);
+  
 }
 
 .navbar .close-btn {
@@ -646,6 +651,8 @@ body.nav-active { overflow: hidden; }
 .navbar-list {
   border-block-end: 1px solid var(--white-alpha-20);
   margin-block-end: 100px;
+  
+  
 }
 
 .navbar-item { border-block-start: 1px solid var(--white-alpha-20); }
@@ -657,6 +664,8 @@ body.nav-active { overflow: hidden; }
   padding-block: 10px;
   max-width: unset;
 }
+
+
 
 .navbar-link::after { display: none; }
 
@@ -842,7 +851,7 @@ body.nav-active { overflow: hidden; }
 
 .service .section-text { margin-block-end: 40px; }
 
-.service-card { overflow: hidden; }
+.service-card { overflow: hidden; margin-bottom: 50px;}
 
 .service-card .has-before {
   padding-block: 30px;
@@ -878,6 +887,8 @@ body.nav-active { overflow: hidden; }
 .service-card:is(:hover, :focus-within) .card-banner { transform: scale(1.05); }
 
 .service .card-title { margin-block-end: 12px; }
+
+
 
 
 
@@ -929,7 +940,7 @@ body.nav-active { overflow: hidden; }
 
 .about .abs-img-2::before {
   inset: 0;
-  background-image: url('../images/badge-2-bg.png');
+  background-image: url('./assets/images/');
   background-repeat: no-repeat;
   background-size: contain;
   animation: rotate360 15s linear infinite;
@@ -1179,7 +1190,7 @@ textarea.input-field {
   position: absolute;
   bottom: 0;
   width: 100%;
-  padding: 35px 35px 25px;
+  padding: 35px 35px 25px ;
 }
 
 .event-card .publish-date {
@@ -1332,6 +1343,8 @@ textarea.input-field {
 
 
 
+
+
 /**
  * responsive for larger than 575px screen
  */
@@ -1397,6 +1410,7 @@ textarea.input-field {
 
   .header { top: 51px; }
 
+  
   .header.active { top: 0; }
 
   .header .btn {
@@ -1404,6 +1418,7 @@ textarea.input-field {
     margin-inline-start: auto;
   }
 
+  
   .hero-btn { transform: scale(0.7); }
 
 
@@ -1495,6 +1510,7 @@ textarea.input-field {
     margin-inline: auto;
   }
 
+  
 
   .navbar-list { margin-inline: 30px; }
 
@@ -1565,7 +1581,9 @@ textarea.input-field {
     grid-column: auto;
     width: 100%;
   }
+  
 
+  
   .topbar-item:not(.link) { display: flex; }
 
   .topbar .item-2 { margin-inline-end: auto; }
@@ -1673,6 +1691,8 @@ textarea.input-field {
     margin-inline: auto;
   }
 
+  
+
 
   .topbar .container { max-width: unset; }
 
@@ -1694,6 +1714,7 @@ textarea.input-field {
   .navbar-list {
     display: flex;
     gap: 30px;
+    
   }
 
   .navbar-item { border-block-start: none; }
@@ -1788,6 +1809,7 @@ textarea.input-field {
     z-index: 1;
   }
 
+  
   .special-dish .shape-1 { top: 45%; }
 
   .special-dish .shape-2 {
