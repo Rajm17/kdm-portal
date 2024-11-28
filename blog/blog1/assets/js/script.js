@@ -111,3 +111,9 @@ window.addEventListener("resize", function () {
 
   moveSliderItem();
 });
+
+
+function redirectToPage() {
+  // This will redirect to a different HTML page
+  window.location.href = "../sampleBlog/index.html";
+}
