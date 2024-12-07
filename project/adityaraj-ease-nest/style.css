@@ -1,0 +1,225 @@
+body {
+    background: #f0f0fd;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.carousel {
+    height: 20%;
+}
+
+.img {
+    width: 100%;
+    height: 400px;
+}
+
+.info-img {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    height: 300px;
+}
+
+#thankyou_msg_div {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.banner-img {
+    height: 700px;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-inline: 20%;
+    margin-top: 50px;
+}
+
+.left-part {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.right-part {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.highlight-point {
+    font-size: larger;
+    margin: 20px auto;
+    text-align: start;
+    list-style-type: '✓  ';
+}
+
+#about-project {
+    font-size: larger;
+}
+
+#disclaimer {
+    margin: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.contact {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;   
+}
+
+#page-contact {
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact-inputs {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.contact button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.consent {
+    margin: 10px;
+}
+
+#logo {
+    width: 40px;
+    height: 30px;
+}
+
+#nav {
+    max-width: 100%;
+    background-image: linear-gradient(to right, #393186, #992882)
+}
+
+#popup-form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    width: 35%;
+}
+
+#popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#popup-close-btn {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    left: auto;
+    right: 8px;
+    bottom: auto;
+    top: 8px;
+    padding: 4px;
+    border: none;
+    background: none;
+}
+
+#whatsapp-redirect {
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#whatsapp-redirect.visible {
+    opacity: 0.8;
+}
+
+#move-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+#move-top.visible {
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 500px) {
+
+    .banner-img {
+        height: 500px;
+    }
+
+    .main-info {
+        display: block;
+        width: 100%;
+        margin: 20px auto;
+        padding-inline: 20px;
+    }
+
+    .left-part {
+        width: 100%;
+    }
+
+    .right-part {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    #popup-form-container {
+        width: 90%;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    #our-perks {
+        flex-direction: column;
+    }
+
+}
